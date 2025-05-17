@@ -1,0 +1,18 @@
+# Build
+dist
+
+# Dependencies
+node_modules
+
+# Environment Variables
+.env
+.env.*
+!.env.example
+
+# macOS
+.DS_Store
+
+# Package Managers
+package-lock.json
+pnpm-lock.yaml
+yarn.lock

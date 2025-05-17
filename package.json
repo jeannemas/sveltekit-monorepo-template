@@ -1,0 +1,29 @@
+{
+  "devDependencies": {
+    "@eslint/compat": "catalog:",
+    "@eslint/js": "catalog:",
+    "@types/eslint": "catalog:",
+    "@types/eslint-config-prettier": "catalog:",
+    "eslint": "catalog:",
+    "eslint-config-prettier": "catalog:",
+    "eslint-plugin-perfectionist": "catalog:",
+    "eslint-plugin-svelte": "catalog:",
+    "globals": "catalog:",
+    "prettier": "catalog:",
+    "prettier-plugin-organize-attributes": "catalog:",
+    "prettier-plugin-svelte": "catalog:",
+    "prettier-plugin-tailwindcss": "catalog:",
+    "turbo": "catalog:",
+    "typescript-eslint": "catalog:"
+  },
+  "packageManager": "pnpm@10.11.0",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "check": "turbo run check",
+    "format": "prettier --log-level=warn --write . && eslint --fix --quiet .",
+    "lint": "prettier --check --log-level=warn . && eslint .",
+    "test:unit": "turbo run test:unit"
+  },
+  "type": "module"
+}

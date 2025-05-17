@@ -1,0 +1,17 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalEnv": [],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": [".svelte-kit/**", ".vercel/**", "dist/**"]
+    },
+    "check": {
+      "cache": false
+    },
+    "test:unit": {
+      "cache": false
+    }
+  }
+}

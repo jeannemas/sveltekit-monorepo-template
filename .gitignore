@@ -1,0 +1,30 @@
+# Build
+.svelte-kit
+dist
+
+# Dependencies
+node_modules
+
+# Environment Variables
+.env
+.env.*
+!.env.example
+
+# macOS
+.DS_Store
+
+# Sentry Config File
+.sentryclirc
+
+# Temporary Files
+/tmp
+
+# Turbo
+.turbo
+
+# Vercel
+.vercel
+
+# Vite temp files
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
